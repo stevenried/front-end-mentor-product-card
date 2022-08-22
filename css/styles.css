@@ -1,0 +1,58 @@
+/* Dependencies */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+/* Variables */
+:root {
+  --clr-primary-dark: hsl(158, 36%, 37%);
+  --clr-primary-light: hsl(30, 38%, 92%);
+
+  --clr-neutral-vry-dark: hsl(212, 21%, 14%);
+  --clr-neutral-dark: hsl(228, 12%, 48%);
+  --clr-neutral-light: hsl(0, 0%, 100%);
+
+  --fs-body: 14px;
+}
+
+/* Style Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--clr-primary-light);
+  margin: 0;
+  /* padding: 1rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Layout */
+.card {
+  background-color: var(--clr-neutral-light);
+  display: flex;
+  flex-direction: column;
+  /* height: 100%; */
+}
+
+.card-split__img--desktop {
+  display: none;
+}
+
+.card-split__copy {
+  /* padding: 0 2rem; */
+  margin: 1rem;
+}
+
+.image {
+  max-width: 100%;
+}
+
+.product-description {
+  margin-bottom: 100px;
+  max-width: 45ch;
+}
